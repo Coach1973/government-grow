@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>中小微企業多元發展實戰說明會 | 經濟部 × 大樹教育顧問</title>
+    <title>中小微企業多元發展貸款說明會（台南場）| 大樹教育顧問</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
@@ -64,7 +64,20 @@
         }
         
         .hero-bg {
-            background: linear-gradient(135deg, #FEF9E7 0%, #FDE68A 100%);
+            background-color: #FFFEF7;
+            background-image:
+                linear-gradient(rgba(15, 23, 42, 0.06) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(15, 23, 42, 0.06) 1px, transparent 1px);
+            background-size: 36px 36px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-title-black {
+            font-family: 'Noto Sans TC', system-ui, sans-serif;
+            font-weight: 900;
+            color: #0a0a0a;
+            letter-spacing: -0.02em;
+            text-shadow: 2px 2px 0 rgba(0,0,0,0.04);
         }
         
         .stat-number {
@@ -172,24 +185,24 @@
         </div>
     </nav>
 
+    <!-- 經濟部官方 Banner 圖（標題視覺，滿版） -->
+    <div class="bg-white w-full">
+        <img src="images/banner2024.jpg" alt="中小微企業多元發展貸款" class="block w-full h-auto">
+    </div>
+
     <!-- Hero Section -->
-    <header class="hero-bg text-green-900 pt-16 pb-20 md:pt-20 md:pb-24 relative overflow-hidden">
+    <header class="hero-bg text-slate-900 pt-12 pb-20 md:pt-16 md:pb-24 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="grid md:grid-cols-12 gap-y-12 items-center">
                 <!-- Hero Content -->
                 <div class="md:col-span-7">
-                    <div class="inline-flex items-center gap-x-2 bg-green-900/10 backdrop-blur-md px-4 py-1.5 rounded-3xl mb-6 border border-green-900/20">
-                        <div class="flex items-center">
-                            <i class="fa-solid fa-globe text-green-700 mr-2"></i>
-                            <span class="text-sm font-medium tracking-wide">經濟部中小及新創企業署 指導</span>
-                        </div>
+                    <div class="inline-flex items-center gap-x-2 bg-green-800 px-6 py-2.5 rounded-2xl mb-6 shadow-lg">
+                        <span class="text-lg font-bold tracking-[6px] text-white">台 南 場</span>
                     </div>
 
-                    <h1 class="text-5xl md:text-6xl font-bold tracking-tighter leading-[1.05] mb-6">
-                        中小微企業<br>
-                        <span class="accent-gradient">多元發展</span><br>
-                        實戰說明會
-                    </h1>
+                    <h2 class="hero-title-black text-3xl md:text-4xl leading-[1.2] mb-6 tracking-tight">
+                        說 明 會
+                    </h2>
 
                     <p class="max-w-lg text-xl text-green-800 mb-8 leading-relaxed">
                         政府資源 × 專業經驗 × 實戰方法<br>
@@ -216,33 +229,29 @@
                             <span class="text-green-800">每場限額 50-80 人</span>
                         </div>
                         <div class="flex items-center gap-x-1.5">
-                            <i class="fa-solid fa-wallet text-green-700"></i>
-                            <span class="text-green-800">每人僅收 <span class="font-semibold text-green-900">600 元</span></span>
+                            <i class="fa-solid fa-gift text-green-700"></i>
+                            <span class="text-green-800 font-semibold text-green-900">免費參加</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Hero Stats / Trust -->
                 <div class="md:col-span-5">
-                    <div class="bg-white/60 backdrop-blur-xl border border-green-900/20 rounded-3xl p-8">
-                        <div class="grid grid-cols-3 gap-6 text-center">
+                    <div class="bg-white border-2 border-yellow-300 rounded-3xl p-8 shadow-xl">
+                        <div class="grid grid-cols-2 gap-6 text-center">
                             <div>
-                                <div class="text-4xl font-bold text-green-900 tracking-tighter">10萬</div>
-                                <div class="text-green-700 text-base mt-1 font-medium">最高補助 / 家</div>
-                            </div>
-                            <div>
-                                <div class="text-4xl font-bold text-green-900 tracking-tighter">30 個月</div>
-                                <div class="text-green-700 text-base mt-1 font-medium">執行時間</div>
-                            </div>
-                            <div>
-                                <div class="text-4xl font-bold text-green-900 tracking-tighter">4場</div>
+                                <div class="text-4xl font-bold text-green-900 tracking-tighter">4 場</div>
                                 <div class="text-green-700 text-base mt-1 font-medium">臺南專場</div>
+                            </div>
+                            <div>
+                                <div class="text-4xl font-bold text-green-900 tracking-tighter">免費</div>
+                                <div class="text-green-700 text-base mt-1 font-medium">全程參加</div>
                             </div>
                         </div>
 
                         <div class="mt-6 pt-6 border-t border-green-900/15 text-sm text-center text-green-800">
-                            由擁有豐富實戰經驗的專業團隊親自講授<br>
-                            幫助非工程背景老闆也能輕鬆掌握政府資源
+                            30 人以下之中小微企業<br>
+                            朝數位轉型、淨零轉型或通路發展
                         </div>
                     </div>
                 </div>
@@ -257,13 +266,11 @@
     <!-- Trust Bar -->
     <div class="border-b border-slate-200 bg-white py-4">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="flex flex-wrap items-center justify-center gap-x-10 gap-y-3 text-sm text-slate-500">
+            <div class="flex flex-wrap items-center justify-center gap-x-10 gap-y-3 text-sm text-slate-600">
                 <div class="flex items-center gap-x-2">
-                    <i class="fa-solid fa-check-circle text-green-500"></i>
-                    <span>經濟部中小及新創企業署 指導單位</span>
+                    <i class="fa-solid fa-check-circle text-green-600"></i>
+                    <span class="font-semibold">承辦單位：大樹教育顧問 / 仟登生技 / 旭妍生技</span>
                 </div>
-                <div class="hidden md:block w-px h-3 bg-slate-300"></div>
-                <div>協辦單位：大樹教育顧問 / 仟登生技 / 旭妍生技</div>
             </div>
         </div>
     </div>
@@ -291,10 +298,10 @@
                 <div class="w-12 h-12 bg-green-100 rounded-2xl flex items-center justify-center mb-5">
                     <i class="fa-solid fa-laptop-code text-green-600 text-2xl"></i>
                 </div>
-                <h3 class="font-bold text-xl mb-3">數位轉型最高補助 10 萬元</h3>
-                <p class="text-slate-600 leading-relaxed">針對服務業的「數位轉型培力補助」完整說明。最高每家企業可獲 10 萬元補助，降低轉型門檻與風險。</p>
+                <h3 class="font-bold text-xl mb-3">服務業數位轉型培力補助</h3>
+                <p class="text-slate-600 leading-relaxed">針對服務業 30 人以下企業的「數位轉型培力補助」完整說明，協助降低數位轉型門檻與風險。</p>
             </div>
-            
+
             <!-- Benefit 3 -->
             <div class="benefit-card modern-card p-7 rounded-3xl">
                 <div class="w-12 h-12 bg-green-100 rounded-2xl flex items-center justify-center mb-5">
@@ -325,13 +332,13 @@
             <!-- Benefit 6 -->
             <div class="benefit-card modern-card p-7 rounded-3xl border-2 border-green-200 bg-green-50/50">
                 <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center mb-5 shadow-sm">
-                    <i class="fa-solid fa-chart-line text-green-600 text-2xl"></i>
+                    <i class="fa-solid fa-gift text-green-600 text-2xl"></i>
                 </div>
-                <h3 class="font-bold text-xl mb-3">600 元的高 CP 值投資</h3>
-                <p class="text-slate-600 leading-relaxed">以極低成本換取政府資源解析 + 實戰方法 + 專家諮詢。潛在回報可能是補助金額的數十倍，甚至改變企業發展軌跡。</p>
+                <h3 class="font-bold text-xl mb-3">全程免費 高價值內容</h3>
+                <p class="text-slate-600 leading-relaxed">完全免費參加，內容涵蓋政府資源解析、實戰方法與專家諮詢，潛在回報是補助金額的數十倍，甚至改變企業發展軌跡。</p>
                 <div class="mt-4 text-xs font-bold text-green-700 flex items-center gap-x-1">
                     <i class="fa-solid fa-check"></i>
-                    <span>這可能是您今年最值得的投資</span>
+                    <span>這可能是您今年最值得參加的一場</span>
                 </div>
             </div>
         </div>
@@ -510,8 +517,8 @@
     <!-- Detailed Agenda -->
     <section id="benefits" class="max-w-7xl mx-auto px-6 py-16">
         <div class="text-center mb-10">
-            <div class="inline-block px-4 py-1 bg-green-100 text-green-700 text-xs font-bold tracking-[1.5px] rounded-3xl mb-3">詳細議程</div>
-            <h2 class="text-4xl font-bold tracking-tight">活動流程（約 3 小時）</h2>
+            <div class="inline-block px-4 py-1 bg-green-100 text-green-700 text-xs font-bold tracking-[1.5px] rounded-3xl mb-3">活動議程</div>
+            <h2 class="text-4xl font-bold tracking-tight">活動議程</h2>
             <p class="text-slate-600 mt-2">每場皆含現場個別諮詢與實務分享</p>
         </div>
         
@@ -549,21 +556,14 @@
                         <div class="w-20 flex-shrink-0 text-green-600 font-mono text-sm font-semibold pt-0.5">14:40-15:10</div>
                         <div class="flex-1">
                             <div class="font-semibold">【服務業】30人以下數位轉型培力補助</div>
-                            <div class="text-xs text-slate-500 mt-0.5">申請條件、流程與實務分享（最高補助 10 萬元）</div>
+                            <div class="text-xs text-slate-500 mt-0.5">申請條件、流程與實務分享</div>
                         </div>
                     </div>
                     <div class="flex gap-x-4 px-6 py-4 items-start hover:bg-yellow-50 transition-colors">
                         <div class="w-20 flex-shrink-0 text-green-600 font-mono text-sm font-semibold pt-0.5">15:10-16:00</div>
                         <div class="flex-1">
-                            <div class="font-semibold">FAQ 與現場各別諮詢</div>
+                            <div class="font-semibold">FAQ、現場各別諮詢</div>
                             <div class="text-xs text-slate-500 mt-0.5">針對企業現況提供具體建議</div>
-                        </div>
-                    </div>
-                    <div class="flex gap-x-4 px-6 py-4 items-start bg-green-50/60 hover:bg-green-50 transition-colors">
-                        <div class="w-20 flex-shrink-0 text-green-700 font-mono text-sm font-semibold pt-0.5">16:00-17:00</div>
-                        <div class="flex-1">
-                            <div class="font-semibold text-green-700">美容／餐飲／AI 交織在一起論譠</div>
-                            <div class="text-xs text-green-600 mt-0.5">實務經驗分享與跨領域交流</div>
                         </div>
                     </div>
                 </div>
@@ -580,19 +580,19 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-8">
                 <div class="text-green-400 text-xs tracking-[2px] font-bold mb-2">POWERED BY</div>
-                <h3 class="text-2xl font-bold tracking-tight">指導與協辦單位</h3>
+                <h3 class="text-2xl font-bold tracking-tight">承辦單位</h3>
             </div>
-            
+
             <div class="flex flex-wrap justify-center items-baseline gap-x-8 gap-y-4 text-center">
-                <div class="font-bold text-lg">經濟部中小及新創企業署 <span class="text-xs text-slate-400 font-normal">（指導單位）</span></div>
+                <div class="font-bold text-lg">大樹教育顧問</div>
                 <div class="hidden md:block w-px h-5 bg-white/20 self-center"></div>
-                <div class="font-bold">大樹教育顧問</div>
-                <div class="font-bold">仟登生技</div>
-                <div class="font-bold">旭妍生技</div>
+                <div class="font-bold text-lg">仟登生技</div>
+                <div class="hidden md:block w-px h-5 bg-white/20 self-center"></div>
+                <div class="font-bold text-lg">旭妍生技</div>
             </div>
-            
+
             <div class="text-center mt-8 text-xs text-slate-400 max-w-md mx-auto">
-                由專業團隊與經濟部中小及新創企業署共同策劃，計畫執行已達 30 個月
+                由專業團隊共同策劃，計畫執行已達 30 個月
             </div>
         </div>
     </section>
@@ -606,7 +606,7 @@
                     
                     <h2 class="text-4xl md:text-5xl font-bold tracking-tighter mb-4">準備好為您的企業<br>開啟新篇章了嗎？</h2>
                     
-                    <p class="text-green-100 text-xl mb-8">600 元，換取清晰的資金與轉型藍圖。<br>這可能是您今年最重要的決定。</p>
+                    <p class="text-green-100 text-xl mb-8">免費參加，換取清晰的資金與轉型藍圖。<br>這可能是您今年最重要的決定。</p>
                     
                     <div class="flex flex-col sm:flex-row gap-4 justify-center">
                         <button onclick="showRegisterModal()" 
@@ -650,7 +650,7 @@
             </div>
             
             <div class="mt-8 pt-6 border-t border-slate-100 text-[10px] text-center text-slate-400">
-                本活動由經濟部中小及新創企業署指導，大樹教育顧問等單位協辦。內容以現場說明為準。保留活動調整權利。
+                本活動由大樹教育顧問、仟登生技、旭妍生技共同承辦。內容以現場說明為準。保留活動調整權利。
             </div>
         </div>
     </footer>
@@ -710,7 +710,7 @@
                         <div class="pt-2">
                             <label class="flex items-start gap-x-3 cursor-pointer">
                                 <input type="checkbox" id="agree" required class="mt-1 w-4 h-4 accent-green-600">
-                                <span class="text-xs text-slate-600 leading-snug">我已了解活動費用為每人新台幣 600 元，並同意活動相關注意事項與個人資料使用。</span>
+                                <span class="text-xs text-slate-600 leading-snug">我已了解本活動為免費參加，並同意活動相關注意事項與個人資料使用。</span>
                             </label>
                         </div>
                     </div>
