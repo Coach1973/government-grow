@@ -11,7 +11,7 @@
         
         :root {
             --primary: #0f172a;
-            --accent: #059669;
+            --accent: #16a34a;
         }
         
         body {
@@ -36,7 +36,7 @@
             left: 0;
             width: 60px;
             height: 3px;
-            background: linear-gradient(to right, #059669, #10b981);
+            background: linear-gradient(to right, #16a34a, #FDE68A);
             border-radius: 3px;
         }
         
@@ -59,12 +59,12 @@
         }
         
         .nav-active {
-            color: #059669;
+            color: #16a34a;
             font-weight: 600;
         }
         
         .hero-bg {
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            background: linear-gradient(135deg, #FEF9E7 0%, #FDE68A 100%);
         }
         
         .stat-number {
@@ -72,7 +72,7 @@
         }
         
         .professional-shadow {
-            box-shadow: 0 10px 15px -3px rgb(15 23 42 / 0.1), 0 4px 6px -4px rgb(15 23 42 / 0.1);
+            box-shadow: 0 10px 15px -3px rgb(20 83 45 / 0.1), 0 4px 6px -4px rgb(20 83 45 / 0.1);
         }
         
         .value-prop {
@@ -86,12 +86,12 @@
         }
         
         .modern-card:hover {
-            border-color: #059669;
-            box-shadow: 0 10px 15px -3px rgb(5 150 105 / 0.1);
+            border-color: #16a34a;
+            box-shadow: 0 10px 15px -3px rgb(22 163 74 / 0.15);
         }
         
         .accent-gradient {
-            background: linear-gradient(90deg, #059669, #10b981);
+            background: linear-gradient(90deg, #14532d, #16a34a);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -105,8 +105,8 @@
         }
         
         .form-input:focus {
-            border-color: #059669;
-            box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.1);
+            border-color: #16a34a;
+            box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.15);
             outline: none;
         }
         
@@ -128,14 +128,14 @@
         }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800">
+<body class="bg-yellow-50 text-slate-800">
     <!-- Navbar -->
     <nav id="navbar" class="bg-white border-b border-slate-200 sticky top-0 z-50 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-6">
             <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
                 <div class="flex items-center gap-x-3">
-                    <div class="w-11 h-11 bg-emerald-600 rounded-2xl flex items-center justify-center shadow-inner">
+                    <div class="w-11 h-11 bg-green-600 rounded-2xl flex items-center justify-center shadow-inner">
                         <i class="fa-solid fa-seedling text-white text-3xl"></i>
                     </div>
                     <div>
@@ -145,20 +145,20 @@
                 
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center gap-x-9 text-sm font-medium">
-                    <a href="#why" class="hover:text-emerald-600 transition-colors">為什麼參加</a>
-                    <a href="#sessions" class="hover:text-emerald-600 transition-colors">場次資訊</a>
-                    <a href="#benefits" class="hover:text-emerald-600 transition-colors">活動流程</a>
-                    <a href="#register" class="hover:text-emerald-600 transition-colors">報名方式</a>
+                    <a href="#why" class="hover:text-green-600 transition-colors">為什麼參加</a>
+                    <a href="#sessions" class="hover:text-green-600 transition-colors">場次資訊</a>
+                    <a href="#benefits" class="hover:text-green-600 transition-colors">活動流程</a>
+                    <a href="#register" class="hover:text-green-600 transition-colors">報名方式</a>
                 </div>
                 
                 <!-- CTA Button -->
                 <div class="flex items-center gap-x-3">
                     <button onclick="document.getElementById('register').scrollIntoView({ behavior: 'smooth' })" 
-                            class="hidden md:block px-6 py-2.5 text-sm font-semibold text-emerald-700 hover:bg-emerald-50 rounded-3xl transition-all border border-emerald-200 hover:border-emerald-300">
+                            class="hidden md:block px-6 py-2.5 text-sm font-semibold text-green-700 hover:bg-green-50 rounded-3xl transition-all border border-green-200 hover:border-green-300">
                         立即報名
                     </button>
                     <button onclick="showRegisterModal()" 
-                            class="px-7 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold rounded-3xl shadow-sm active:scale-[0.985] transition-all flex items-center gap-x-2">
+                            class="px-7 py-2.5 bg-green-600 hover:bg-green-700 text-white text-sm font-semibold rounded-3xl shadow-sm active:scale-[0.985] transition-all flex items-center gap-x-2">
                         <i class="fa-solid fa-calendar-check"></i>
                         <span>選擇場次報名</span>
                     </button>
@@ -173,74 +173,74 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero-bg text-white pt-16 pb-20 md:pt-20 md:pb-24 relative overflow-hidden">
+    <header class="hero-bg text-green-900 pt-16 pb-20 md:pt-20 md:pb-24 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="grid md:grid-cols-12 gap-y-12 items-center">
                 <!-- Hero Content -->
                 <div class="md:col-span-7">
-                    <div class="inline-flex items-center gap-x-2 bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-3xl mb-6 border border-white/20">
+                    <div class="inline-flex items-center gap-x-2 bg-green-900/10 backdrop-blur-md px-4 py-1.5 rounded-3xl mb-6 border border-green-900/20">
                         <div class="flex items-center">
-                            <i class="fa-solid fa-globe text-emerald-400 mr-2"></i>
+                            <i class="fa-solid fa-globe text-green-700 mr-2"></i>
                             <span class="text-sm font-medium tracking-wide">經濟部中小及新創企業署 指導</span>
                         </div>
                     </div>
-                    
+
                     <h1 class="text-5xl md:text-6xl font-bold tracking-tighter leading-[1.05] mb-6">
                         中小微企業<br>
                         <span class="accent-gradient">多元發展</span><br>
                         實戰說明會
                     </h1>
-                    
-                    <p class="max-w-lg text-xl text-slate-300 mb-8 leading-relaxed">
+
+                    <p class="max-w-lg text-xl text-green-800 mb-8 leading-relaxed">
                         政府資源 × 專業經驗 × 實戰方法<br>
                         幫助您掌握資金與數位轉型機會
                     </p>
-                    
+
                     <div class="flex flex-wrap gap-4">
-                        <button onclick="document.getElementById('sessions').scrollIntoView({ behavior: 'smooth' })" 
-                                class="group flex items-center justify-center gap-x-3 px-8 h-14 bg-white text-slate-900 font-semibold rounded-3xl hover:bg-amber-50 active:scale-[0.985] transition-all shadow-xl text-base">
+                        <button onclick="document.getElementById('sessions').scrollIntoView({ behavior: 'smooth' })"
+                                class="group flex items-center justify-center gap-x-3 px-8 h-14 bg-green-800 text-white font-semibold rounded-3xl hover:bg-green-900 active:scale-[0.985] transition-all shadow-xl text-base">
                             <span>查看 4 大限定場次</span>
                             <i class="fa-solid fa-arrow-right group-hover:translate-x-0.5 transition-transform"></i>
                         </button>
-                        
-                        <button onclick="window.open(LINE_REGISTRATION_URL, '_blank')" 
-                                class="flex items-center justify-center gap-x-3 px-8 h-14 border-2 border-white/70 hover:bg-white/10 font-semibold rounded-3xl transition-all text-base">
+
+                        <button onclick="window.open(LINE_REGISTRATION_URL, '_blank')"
+                                class="flex items-center justify-center gap-x-3 px-8 h-14 border-2 border-green-800 text-green-900 hover:bg-green-900/10 font-semibold rounded-3xl transition-all text-base">
                             <i class="fa-brands fa-line"></i>
                             <span>立即加入 Line 報名</span>
                         </button>
                     </div>
-                    
+
                     <div class="flex items-center gap-x-6 mt-8 text-sm">
                         <div class="flex items-center gap-x-1.5">
-                            <i class="fa-solid fa-users text-emerald-400"></i>
-                            <span class="text-slate-300">每場限額 50-80 人</span>
+                            <i class="fa-solid fa-users text-green-700"></i>
+                            <span class="text-green-800">每場限額 50-80 人</span>
                         </div>
                         <div class="flex items-center gap-x-1.5">
-                            <i class="fa-solid fa-wallet text-emerald-400"></i>
-                            <span class="text-slate-300">每人僅收 <span class="font-semibold text-white">600 元</span></span>
+                            <i class="fa-solid fa-wallet text-green-700"></i>
+                            <span class="text-green-800">每人僅收 <span class="font-semibold text-green-900">600 元</span></span>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Hero Stats / Trust -->
                 <div class="md:col-span-5">
-                    <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8">
+                    <div class="bg-white/60 backdrop-blur-xl border border-green-900/20 rounded-3xl p-8">
                         <div class="grid grid-cols-3 gap-6 text-center">
                             <div>
-                                <div class="text-4xl font-bold text-white tracking-tighter">10萬</div>
-                                <div class="text-emerald-400 text-base mt-1 font-medium">最高補助 / 家</div>
+                                <div class="text-4xl font-bold text-green-900 tracking-tighter">10萬</div>
+                                <div class="text-green-700 text-base mt-1 font-medium">最高補助 / 家</div>
                             </div>
                             <div>
-                                <div class="text-4xl font-bold text-white tracking-tighter">30 個月</div>
-                                <div class="text-emerald-400 text-base mt-1 font-medium">執行時間</div>
+                                <div class="text-4xl font-bold text-green-900 tracking-tighter">30 個月</div>
+                                <div class="text-green-700 text-base mt-1 font-medium">執行時間</div>
                             </div>
                             <div>
-                                <div class="text-4xl font-bold text-white tracking-tighter">4場</div>
-                                <div class="text-emerald-400 text-base mt-1 font-medium">臺南專場</div>
+                                <div class="text-4xl font-bold text-green-900 tracking-tighter">4場</div>
+                                <div class="text-green-700 text-base mt-1 font-medium">臺南專場</div>
                             </div>
                         </div>
-                        
-                        <div class="mt-6 pt-6 border-t border-white/10 text-sm text-center text-slate-300">
+
+                        <div class="mt-6 pt-6 border-t border-green-900/15 text-sm text-center text-green-800">
                             由擁有豐富實戰經驗的專業團隊親自講授<br>
                             幫助非工程背景老闆也能輕鬆掌握政府資源
                         </div>
@@ -248,10 +248,10 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Subtle decorative elements -->
-        <div class="absolute top-20 right-10 w-72 h-72 bg-emerald-500/5 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-10 left-10 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
+        <div class="absolute top-20 right-10 w-72 h-72 bg-green-700/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-10 left-10 w-96 h-96 bg-yellow-200/40 rounded-full blur-3xl"></div>
     </header>
 
     <!-- Trust Bar -->
@@ -259,7 +259,7 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="flex flex-wrap items-center justify-center gap-x-10 gap-y-3 text-sm text-slate-500">
                 <div class="flex items-center gap-x-2">
-                    <i class="fa-solid fa-check-circle text-emerald-500"></i>
+                    <i class="fa-solid fa-check-circle text-green-500"></i>
                     <span>經濟部中小及新創企業署 指導單位</span>
                 </div>
                 <div class="hidden md:block w-px h-3 bg-slate-300"></div>
@@ -271,7 +271,7 @@
     <!-- Why Attend Section -->
     <section id="why" class="max-w-7xl mx-auto px-6 pt-16 pb-12">
         <div class="text-center mb-12">
-            <div class="inline-block px-4 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold tracking-[1.5px] rounded-3xl mb-4">為什麼選擇這場說明會？</div>
+            <div class="inline-block px-4 py-1 bg-green-100 text-green-700 text-xs font-bold tracking-[1.5px] rounded-3xl mb-4">為什麼選擇這場說明會？</div>
             <h2 class="text-4xl font-bold tracking-tight section-title">明確的理由與動機</h2>
             <p class="mt-4 text-xl text-slate-600 max-w-2xl mx-auto">我們不只告訴您「有什麼」，更教您「怎麼做」，讓每一分投入都產生實際回報。</p>
         </div>
@@ -279,8 +279,8 @@
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- Benefit 1 -->
             <div class="benefit-card modern-card p-7 rounded-3xl">
-                <div class="w-12 h-12 bg-emerald-100 rounded-2xl flex items-center justify-center mb-5">
-                    <i class="fa-solid fa-hand-holding-usd text-emerald-600 text-2xl"></i>
+                <div class="w-12 h-12 bg-green-100 rounded-2xl flex items-center justify-center mb-5">
+                    <i class="fa-solid fa-hand-holding-usd text-green-600 text-2xl"></i>
                 </div>
                 <h3 class="font-bold text-xl mb-3">資金取得不再困難</h3>
                 <p class="text-slate-600 leading-relaxed">詳細解析「中小微企業多元發展貸款」申請條件、流程與審核重點。讓您清楚知道如何為企業爭取最合適的資金支持。</p>
@@ -288,8 +288,8 @@
             
             <!-- Benefit 2 -->
             <div class="benefit-card modern-card p-7 rounded-3xl">
-                <div class="w-12 h-12 bg-emerald-100 rounded-2xl flex items-center justify-center mb-5">
-                    <i class="fa-solid fa-laptop-code text-emerald-600 text-2xl"></i>
+                <div class="w-12 h-12 bg-green-100 rounded-2xl flex items-center justify-center mb-5">
+                    <i class="fa-solid fa-laptop-code text-green-600 text-2xl"></i>
                 </div>
                 <h3 class="font-bold text-xl mb-3">數位轉型最高補助 10 萬元</h3>
                 <p class="text-slate-600 leading-relaxed">針對服務業的「數位轉型培力補助」完整說明。最高每家企業可獲 10 萬元補助，降低轉型門檻與風險。</p>
@@ -297,8 +297,8 @@
             
             <!-- Benefit 3 -->
             <div class="benefit-card modern-card p-7 rounded-3xl">
-                <div class="w-12 h-12 bg-emerald-100 rounded-2xl flex items-center justify-center mb-5">
-                    <i class="fa-solid fa-user-tie text-emerald-600 text-2xl"></i>
+                <div class="w-12 h-12 bg-green-100 rounded-2xl flex items-center justify-center mb-5">
+                    <i class="fa-solid fa-user-tie text-green-600 text-2xl"></i>
                 </div>
                 <h3 class="font-bold text-xl mb-3">計畫執行已達 30 個月</h3>
                 <p class="text-slate-600 leading-relaxed">專業團隊累積實務經驗，協助企業掌握政府資源與數位轉型機會。</p>
@@ -306,8 +306,8 @@
             
             <!-- Benefit 4 -->
             <div class="benefit-card modern-card p-7 rounded-3xl">
-                <div class="w-12 h-12 bg-emerald-100 rounded-2xl flex items-center justify-center mb-5">
-                    <i class="fa-solid fa-comments text-emerald-600 text-2xl"></i>
+                <div class="w-12 h-12 bg-green-100 rounded-2xl flex items-center justify-center mb-5">
+                    <i class="fa-solid fa-comments text-green-600 text-2xl"></i>
                 </div>
                 <h3 class="font-bold text-xl mb-3">現場 Q&amp;A 解決真實痛點</h3>
                 <p class="text-slate-600 leading-relaxed">不只是聽講，更是問題解決會。帶著您企業的實際狀況來，專家當場給予針對性建議與方向。</p>
@@ -315,21 +315,21 @@
             
             <!-- Benefit 5 -->
             <div class="benefit-card modern-card p-7 rounded-3xl">
-                <div class="w-12 h-12 bg-emerald-100 rounded-2xl flex items-center justify-center mb-5">
-                    <i class="fa-solid fa-handshake text-emerald-600 text-2xl"></i>
+                <div class="w-12 h-12 bg-green-100 rounded-2xl flex items-center justify-center mb-5">
+                    <i class="fa-solid fa-handshake text-green-600 text-2xl"></i>
                 </div>
                 <h3 class="font-bold text-xl mb-3">限額小班 人脈與資源交流</h3>
                 <p class="text-slate-600 leading-relaxed">每場僅 50-80 人，創造高品質交流環境。認識其他努力成長的企業主，發現潛在合作與商機。</p>
             </div>
             
             <!-- Benefit 6 -->
-            <div class="benefit-card modern-card p-7 rounded-3xl border-2 border-emerald-200 bg-emerald-50/50">
+            <div class="benefit-card modern-card p-7 rounded-3xl border-2 border-green-200 bg-green-50/50">
                 <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center mb-5 shadow-sm">
-                    <i class="fa-solid fa-chart-line text-emerald-600 text-2xl"></i>
+                    <i class="fa-solid fa-chart-line text-green-600 text-2xl"></i>
                 </div>
                 <h3 class="font-bold text-xl mb-3">600 元的高 CP 值投資</h3>
                 <p class="text-slate-600 leading-relaxed">以極低成本換取政府資源解析 + 實戰方法 + 專家諮詢。潛在回報可能是補助金額的數十倍，甚至改變企業發展軌跡。</p>
-                <div class="mt-4 text-xs font-bold text-emerald-700 flex items-center gap-x-1">
+                <div class="mt-4 text-xs font-bold text-green-700 flex items-center gap-x-1">
                     <i class="fa-solid fa-check"></i>
                     <span>這可能是您今年最值得的投資</span>
                 </div>
@@ -342,7 +342,7 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="flex flex-col md:flex-row md:items-end md:justify-between mb-10">
                 <div>
-                    <div class="text-emerald-600 font-bold tracking-[1px] text-sm mb-2">2026 南台灣限定巡迴</div>
+                    <div class="text-green-600 font-bold tracking-[1px] text-sm mb-2">2026 南台灣限定巡迴</div>
                     <h2 class="text-4xl font-bold tracking-tight">活動場次資訊</h2>
                 </div>
                 <div class="mt-4 md:mt-0">
@@ -356,12 +356,12 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Session 1 -->
                 <div class="session-card modern-card rounded-3xl overflow-hidden border border-slate-200 flex flex-col">
-                    <div class="bg-gradient-to-br from-emerald-600 to-emerald-700 px-6 py-5 text-white">
+                    <div class="bg-gradient-to-br from-green-600 to-green-700 px-6 py-5 text-white">
                         <div class="flex justify-between items-start">
                             <div>
-                                <div class="text-emerald-200 text-xs tracking-widest font-medium">第 1 場</div>
+                                <div class="text-green-200 text-xs tracking-widest font-medium">第 1 場</div>
                                 <div class="text-3xl font-bold tracking-tighter mt-1">7月1日</div>
-                                <div class="text-emerald-200 text-sm">星期三</div>
+                                <div class="text-green-200 text-sm">星期三</div>
                             </div>
                             <div class="text-right">
                                 <div class="limited-badge text-[10px] px-3 py-0.5 rounded-2xl inline-block">80人</div>
@@ -370,7 +370,7 @@
                     </div>
                     <div class="p-6 flex-1 flex flex-col">
                         <div class="flex items-start gap-x-3 mb-4">
-                            <i class="fa-solid fa-map-marker-alt text-emerald-500 mt-1"></i>
+                            <i class="fa-solid fa-map-marker-alt text-green-500 mt-1"></i>
                             <div class="text-sm leading-tight">
                                 <div class="font-semibold">維悅酒店</div>
                                 <div class="text-slate-500 text-xs mt-0.5">安平區慶平路 539 號</div>
@@ -379,13 +379,13 @@
                         
                         <div class="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between text-sm">
                             <div>
-                                <div class="text-emerald-600 font-semibold flex items-center gap-x-1 text-xs">
+                                <div class="text-green-600 font-semibold flex items-center gap-x-1 text-xs">
                                     <i class="fa-solid fa-clock"></i>
                                     <span>13:30-17:00</span>
                                 </div>
                             </div>
                             <button onclick="showRegisterModal(0)" 
-                                    class="text-xs font-bold px-4 py-2 bg-emerald-600 text-white rounded-2xl hover:bg-emerald-700 transition-colors active:scale-95">
+                                    class="text-xs font-bold px-4 py-2 bg-green-600 text-white rounded-2xl hover:bg-green-700 transition-colors active:scale-95">
                                 立即報名
                             </button>
                         </div>
@@ -394,12 +394,12 @@
                 
                 <!-- Session 2 -->
                 <div class="session-card modern-card rounded-3xl overflow-hidden border border-slate-200 flex flex-col">
-                    <div class="bg-gradient-to-br from-emerald-600 to-emerald-700 px-6 py-5 text-white">
+                    <div class="bg-gradient-to-br from-green-600 to-green-700 px-6 py-5 text-white">
                         <div class="flex justify-between items-start">
                             <div>
-                                <div class="text-emerald-200 text-xs tracking-widest font-medium">第 2 場</div>
+                                <div class="text-green-200 text-xs tracking-widest font-medium">第 2 場</div>
                                 <div class="text-3xl font-bold tracking-tighter mt-1">7月15日</div>
-                                <div class="text-emerald-200 text-sm">星期三</div>
+                                <div class="text-green-200 text-sm">星期三</div>
                             </div>
                             <div class="text-right">
                                 <div class="limited-badge text-[10px] px-3 py-0.5 rounded-2xl inline-block">60人</div>
@@ -408,7 +408,7 @@
                     </div>
                     <div class="p-6 flex-1 flex flex-col">
                         <div class="flex items-start gap-x-3 mb-4">
-                            <i class="fa-solid fa-map-marker-alt text-emerald-500 mt-1"></i>
+                            <i class="fa-solid fa-map-marker-alt text-green-500 mt-1"></i>
                             <div class="text-sm leading-tight">
                                 <div class="font-semibold">資安暨智慧科技研發大樓</div>
                                 <div class="text-slate-500 text-xs mt-0.5">歸仁區歸仁十三路一段 6 號</div>
@@ -416,12 +416,12 @@
                         </div>
                         
                         <div class="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between text-sm">
-                            <div class="text-emerald-600 font-semibold flex items-center gap-x-1 text-xs">
+                            <div class="text-green-600 font-semibold flex items-center gap-x-1 text-xs">
                                     <i class="fa-solid fa-clock"></i>
                                     <span>13:30-17:00</span>
                                 </div>
                             <button onclick="showRegisterModal(1)" 
-                                    class="text-xs font-bold px-4 py-2 bg-emerald-600 text-white rounded-2xl hover:bg-emerald-700 transition-colors active:scale-95">
+                                    class="text-xs font-bold px-4 py-2 bg-green-600 text-white rounded-2xl hover:bg-green-700 transition-colors active:scale-95">
                                 立即報名
                             </button>
                         </div>
@@ -430,12 +430,12 @@
                 
                 <!-- Session 3 -->
                 <div class="session-card modern-card rounded-3xl overflow-hidden border border-slate-200 flex flex-col">
-                    <div class="bg-gradient-to-br from-emerald-600 to-emerald-700 px-6 py-5 text-white">
+                    <div class="bg-gradient-to-br from-green-600 to-green-700 px-6 py-5 text-white">
                         <div class="flex justify-between items-start">
                             <div>
-                                <div class="text-emerald-200 text-xs tracking-widest font-medium">第 3 場</div>
+                                <div class="text-green-200 text-xs tracking-widest font-medium">第 3 場</div>
                                 <div class="text-3xl font-bold tracking-tighter mt-1">7月29日</div>
-                                <div class="text-emerald-200 text-sm">星期三</div>
+                                <div class="text-green-200 text-sm">星期三</div>
                             </div>
                             <div class="text-right">
                                 <div class="limited-badge text-[10px] px-3 py-0.5 rounded-2xl inline-block">50人</div>
@@ -444,7 +444,7 @@
                     </div>
                     <div class="p-6 flex-1 flex flex-col">
                         <div class="flex items-start gap-x-3 mb-4">
-                            <i class="fa-solid fa-map-marker-alt text-emerald-500 mt-1"></i>
+                            <i class="fa-solid fa-map-marker-alt text-green-500 mt-1"></i>
                             <div class="text-sm leading-tight">
                                 <div class="font-semibold">經濟部南台灣創新園區</div>
                                 <div class="text-slate-500 text-xs mt-0.5">安南區塩田里工業二路 31 號</div>
@@ -452,12 +452,12 @@
                         </div>
                         
                         <div class="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between text-sm">
-                            <div class="text-emerald-600 font-semibold flex items-center gap-x-1 text-xs">
+                            <div class="text-green-600 font-semibold flex items-center gap-x-1 text-xs">
                                     <i class="fa-solid fa-clock"></i>
                                     <span>13:30-17:00</span>
                                 </div>
                             <button onclick="showRegisterModal(2)" 
-                                    class="text-xs font-bold px-4 py-2 bg-emerald-600 text-white rounded-2xl hover:bg-emerald-700 transition-colors active:scale-95">
+                                    class="text-xs font-bold px-4 py-2 bg-green-600 text-white rounded-2xl hover:bg-green-700 transition-colors active:scale-95">
                                 立即報名
                             </button>
                         </div>
@@ -466,12 +466,12 @@
                 
                 <!-- Session 4 -->
                 <div class="session-card modern-card rounded-3xl overflow-hidden border border-slate-200 flex flex-col">
-                    <div class="bg-gradient-to-br from-emerald-600 to-emerald-700 px-6 py-5 text-white">
+                    <div class="bg-gradient-to-br from-green-600 to-green-700 px-6 py-5 text-white">
                         <div class="flex justify-between items-start">
                             <div>
-                                <div class="text-emerald-200 text-xs tracking-widest font-medium">第 4 場</div>
+                                <div class="text-green-200 text-xs tracking-widest font-medium">第 4 場</div>
                                 <div class="text-3xl font-bold tracking-tighter mt-1">8月12日</div>
-                                <div class="text-emerald-200 text-sm">星期三</div>
+                                <div class="text-green-200 text-sm">星期三</div>
                             </div>
                             <div class="text-right">
                                 <div class="limited-badge text-[10px] px-3 py-0.5 rounded-2xl inline-block">50人</div>
@@ -480,7 +480,7 @@
                     </div>
                     <div class="p-6 flex-1 flex flex-col">
                         <div class="flex items-start gap-x-3 mb-4">
-                            <i class="fa-solid fa-map-marker-alt text-emerald-500 mt-1"></i>
+                            <i class="fa-solid fa-map-marker-alt text-green-500 mt-1"></i>
                             <div class="text-sm leading-tight">
                                 <div class="font-semibold">三道門建築文創旅店</div>
                                 <div class="text-slate-500 text-xs mt-0.5">中西區成功路 77 號</div>
@@ -488,12 +488,12 @@
                         </div>
                         
                         <div class="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between text-sm">
-                            <div class="text-emerald-600 font-semibold flex items-center gap-x-1 text-xs">
+                            <div class="text-green-600 font-semibold flex items-center gap-x-1 text-xs">
                                     <i class="fa-solid fa-clock"></i>
                                     <span>13:30-17:00</span>
                                 </div>
                             <button onclick="showRegisterModal(3)" 
-                                    class="text-xs font-bold px-4 py-2 bg-emerald-600 text-white rounded-2xl hover:bg-emerald-700 transition-colors active:scale-95">
+                                    class="text-xs font-bold px-4 py-2 bg-green-600 text-white rounded-2xl hover:bg-green-700 transition-colors active:scale-95">
                                 立即報名
                             </button>
                         </div>
@@ -502,7 +502,7 @@
             </div>
             
             <div class="text-center mt-8 text-sm text-slate-500">
-                各場次時間 <span class="font-semibold text-emerald-700">2 點到 5 點</span>（約 3 小時），含現場個別諮詢與論譠
+                各場次時間 <span class="font-semibold text-green-700">2 點到 5 點</span>（約 3 小時），含現場個別諮詢與論譠
             </div>
         </div>
     </section>
@@ -510,7 +510,7 @@
     <!-- Detailed Agenda -->
     <section id="benefits" class="max-w-7xl mx-auto px-6 py-16">
         <div class="text-center mb-10">
-            <div class="inline-block px-4 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold tracking-[1.5px] rounded-3xl mb-3">詳細議程</div>
+            <div class="inline-block px-4 py-1 bg-green-100 text-green-700 text-xs font-bold tracking-[1.5px] rounded-3xl mb-3">詳細議程</div>
             <h2 class="text-4xl font-bold tracking-tight">活動流程（約 3 小時）</h2>
             <p class="text-slate-600 mt-2">每場皆含現場個別諮詢與實務分享</p>
         </div>
@@ -519,51 +519,51 @@
             <div class="bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm">
                 <!-- Timeline Items -->
                 <div class="divide-y divide-slate-100">
-                    <div class="flex gap-x-4 px-6 py-4 items-start hover:bg-slate-50 transition-colors">
-                        <div class="w-24 flex-shrink-0 text-emerald-600 font-mono text-base font-semibold pt-0.5">13:30-14:00</div>
+                    <div class="flex gap-x-4 px-6 py-4 items-start hover:bg-yellow-50 transition-colors">
+                        <div class="w-24 flex-shrink-0 text-green-600 font-mono text-base font-semibold pt-0.5">13:30-14:00</div>
                         <div class="flex-1">
                             <div class="font-semibold text-lg">現場報到</div>
                             <div class="text-sm text-slate-500 mt-0.5">簽到、領取講義與茶點</div>
                         </div>
                     </div>
-                    <div class="flex gap-x-4 px-6 py-4 items-start hover:bg-slate-50 transition-colors">
-                        <div class="w-20 flex-shrink-0 text-emerald-600 font-mono text-sm font-semibold pt-0.5">14:00-14:05</div>
+                    <div class="flex gap-x-4 px-6 py-4 items-start hover:bg-yellow-50 transition-colors">
+                        <div class="w-20 flex-shrink-0 text-green-600 font-mono text-sm font-semibold pt-0.5">14:00-14:05</div>
                         <div class="flex-1">
                             <div class="font-semibold">主辦單位致詞</div>
                         </div>
                     </div>
-                    <div class="flex gap-x-4 px-6 py-4 items-start hover:bg-slate-50 transition-colors">
-                        <div class="w-20 flex-shrink-0 text-emerald-600 font-mono text-sm font-semibold pt-0.5">14:05-14:10</div>
+                    <div class="flex gap-x-4 px-6 py-4 items-start hover:bg-yellow-50 transition-colors">
+                        <div class="w-20 flex-shrink-0 text-green-600 font-mono text-sm font-semibold pt-0.5">14:05-14:10</div>
                         <div class="flex-1">
                             <div class="font-semibold">大合照</div>
                         </div>
                     </div>
-                    <div class="flex gap-x-4 px-6 py-4 items-start hover:bg-slate-50 transition-colors">
-                        <div class="w-20 flex-shrink-0 text-emerald-600 font-mono text-sm font-semibold pt-0.5">14:10-14:40</div>
+                    <div class="flex gap-x-4 px-6 py-4 items-start hover:bg-yellow-50 transition-colors">
+                        <div class="w-20 flex-shrink-0 text-green-600 font-mono text-sm font-semibold pt-0.5">14:10-14:40</div>
                         <div class="flex-1">
                             <div class="font-semibold">中小微企業多元發展計畫說明</div>
                             <div class="text-xs text-slate-500 mt-0.5">及信用保證審核機制說明</div>
                         </div>
                     </div>
-                    <div class="flex gap-x-4 px-6 py-4 items-start hover:bg-slate-50 transition-colors">
-                        <div class="w-20 flex-shrink-0 text-emerald-600 font-mono text-sm font-semibold pt-0.5">14:40-15:10</div>
+                    <div class="flex gap-x-4 px-6 py-4 items-start hover:bg-yellow-50 transition-colors">
+                        <div class="w-20 flex-shrink-0 text-green-600 font-mono text-sm font-semibold pt-0.5">14:40-15:10</div>
                         <div class="flex-1">
                             <div class="font-semibold">【服務業】30人以下數位轉型培力補助</div>
                             <div class="text-xs text-slate-500 mt-0.5">申請條件、流程與實務分享（最高補助 10 萬元）</div>
                         </div>
                     </div>
-                    <div class="flex gap-x-4 px-6 py-4 items-start hover:bg-slate-50 transition-colors">
-                        <div class="w-20 flex-shrink-0 text-emerald-600 font-mono text-sm font-semibold pt-0.5">15:10-16:00</div>
+                    <div class="flex gap-x-4 px-6 py-4 items-start hover:bg-yellow-50 transition-colors">
+                        <div class="w-20 flex-shrink-0 text-green-600 font-mono text-sm font-semibold pt-0.5">15:10-16:00</div>
                         <div class="flex-1">
                             <div class="font-semibold">FAQ 與現場各別諮詢</div>
                             <div class="text-xs text-slate-500 mt-0.5">針對企業現況提供具體建議</div>
                         </div>
                     </div>
-                    <div class="flex gap-x-4 px-6 py-4 items-start bg-emerald-50/60 hover:bg-emerald-50 transition-colors">
-                        <div class="w-20 flex-shrink-0 text-emerald-700 font-mono text-sm font-semibold pt-0.5">16:00-17:00</div>
+                    <div class="flex gap-x-4 px-6 py-4 items-start bg-green-50/60 hover:bg-green-50 transition-colors">
+                        <div class="w-20 flex-shrink-0 text-green-700 font-mono text-sm font-semibold pt-0.5">16:00-17:00</div>
                         <div class="flex-1">
-                            <div class="font-semibold text-emerald-700">美容／餐飲／AI 交織在一起論譠</div>
-                            <div class="text-xs text-emerald-600 mt-0.5">實務經驗分享與跨領域交流</div>
+                            <div class="font-semibold text-green-700">美容／餐飲／AI 交織在一起論譠</div>
+                            <div class="text-xs text-green-600 mt-0.5">實務經驗分享與跨領域交流</div>
                         </div>
                     </div>
                 </div>
@@ -579,7 +579,7 @@
     <section class="bg-slate-900 text-white py-12">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-8">
-                <div class="text-emerald-400 text-xs tracking-[2px] font-bold mb-2">POWERED BY</div>
+                <div class="text-green-400 text-xs tracking-[2px] font-bold mb-2">POWERED BY</div>
                 <h3 class="text-2xl font-bold tracking-tight">指導與協辦單位</h3>
             </div>
             
@@ -599,18 +599,18 @@
 
     <!-- Final CTA / Register Section -->
     <section id="register" class="max-w-7xl mx-auto px-6 py-16">
-        <div class="bg-gradient-to-br from-emerald-600 via-emerald-700 to-emerald-800 rounded-3xl p-10 md:p-14 text-white text-center relative overflow-hidden">
+        <div class="bg-gradient-to-br from-green-600 via-green-700 to-green-800 rounded-3xl p-10 md:p-14 text-white text-center relative overflow-hidden">
             <div class="relative z-10">
                 <div class="max-w-2xl mx-auto">
                     <div class="inline-block bg-white/20 text-xs font-bold tracking-widest px-5 py-1.5 rounded-3xl mb-6">名額有限 · 建議盡速行動</div>
                     
                     <h2 class="text-4xl md:text-5xl font-bold tracking-tighter mb-4">準備好為您的企業<br>開啟新篇章了嗎？</h2>
                     
-                    <p class="text-emerald-100 text-xl mb-8">600 元，換取清晰的資金與轉型藍圖。<br>這可能是您今年最重要的決定。</p>
+                    <p class="text-green-100 text-xl mb-8">600 元，換取清晰的資金與轉型藍圖。<br>這可能是您今年最重要的決定。</p>
                     
                     <div class="flex flex-col sm:flex-row gap-4 justify-center">
                         <button onclick="showRegisterModal()" 
-                                class="px-10 h-16 bg-white text-emerald-700 hover:bg-amber-50 font-bold text-lg rounded-3xl flex items-center justify-center gap-x-3 active:scale-[0.985] transition-all shadow-2xl">
+                                class="px-10 h-16 bg-white text-green-700 hover:bg-amber-50 font-bold text-lg rounded-3xl flex items-center justify-center gap-x-3 active:scale-[0.985] transition-all shadow-2xl">
                             <i class="fa-solid fa-ticket"></i>
                             <span>立即選擇場次報名</span>
                         </button>
@@ -622,7 +622,7 @@
                         </button>
                     </div>
                     
-                    <div class="mt-8 text-xs text-emerald-200 flex items-center justify-center gap-x-2">
+                    <div class="mt-8 text-xs text-green-200 flex items-center justify-center gap-x-2">
                         <i class="fa-solid fa-shield-halved"></i>
                         <span>報名後將以 Line / Email 確認席次與繳費方式</span>
                     </div>
@@ -644,8 +644,8 @@
                 </div>
                 
                 <div class="text-xs space-y-1 md:text-right">
-                    <div>Line 官方帳號：<span class="font-mono font-semibold text-emerald-600">大樹教育</span></div>
-                    <div><a href="https://page.line.me/qaw8118h?openQrModal=true" target="_blank" class="text-emerald-600 hover:underline">https://page.line.me/qaw8118h</a></div>
+                    <div>Line 官方帳號：<span class="font-mono font-semibold text-green-600">大樹教育</span></div>
+                    <div><a href="https://page.line.me/qaw8118h?openQrModal=true" target="_blank" class="text-green-600 hover:underline">https://page.line.me/qaw8118h</a></div>
                 </div>
             </div>
             
@@ -661,10 +661,10 @@
         
         <div class="bg-white rounded-3xl w-full max-w-lg relative shadow-2xl overflow-hidden animate-[fadeIn_0.2s_ease]">
             <!-- Modal Header -->
-            <div class="bg-emerald-600 px-8 py-6 text-white flex items-center justify-between">
+            <div class="bg-green-600 px-8 py-6 text-white flex items-center justify-between">
                 <div>
                     <div class="font-bold text-2xl tracking-tight">報名參加</div>
-                    <div class="text-emerald-200 text-sm">請填寫以下資料，我們將盡速與您確認</div>
+                    <div class="text-green-200 text-sm">請填寫以下資料，我們將盡速與您確認</div>
                 </div>
                 <button onclick="hideRegisterModal()" class="w-9 h-9 flex items-center justify-center text-white/70 hover:text-white text-3xl leading-none">&times;</button>
             </div>
@@ -709,7 +709,7 @@
                         
                         <div class="pt-2">
                             <label class="flex items-start gap-x-3 cursor-pointer">
-                                <input type="checkbox" id="agree" required class="mt-1 w-4 h-4 accent-emerald-600">
+                                <input type="checkbox" id="agree" required class="mt-1 w-4 h-4 accent-green-600">
                                 <span class="text-xs text-slate-600 leading-snug">我已了解活動費用為每人新台幣 600 元，並同意活動相關注意事項與個人資料使用。</span>
                             </label>
                         </div>
@@ -717,16 +717,16 @@
                     
                     <div class="mt-8 flex gap-x-3">
                         <button type="button" onclick="hideRegisterModal()" 
-                                class="flex-1 h-14 border border-slate-300 hover:bg-slate-50 font-semibold rounded-3xl text-sm transition-colors">取消</button>
+                                class="flex-1 h-14 border border-slate-300 hover:bg-yellow-50 font-semibold rounded-3xl text-sm transition-colors">取消</button>
                         <button type="submit" 
-                                class="flex-1 h-14 bg-emerald-600 hover:bg-emerald-700 active:bg-emerald-800 text-white font-bold rounded-3xl text-base transition-all flex items-center justify-center gap-x-2">
+                                class="flex-1 h-14 bg-green-600 hover:bg-green-700 active:bg-green-800 text-white font-bold rounded-3xl text-base transition-all flex items-center justify-center gap-x-2">
                             <span>確認送出報名</span>
                         </button>
                     </div>
                 </form>
                 
                 <div class="text-center mt-5">
-                    <div class="text-[10px] text-slate-400">或直接加入 Line 官方帳號 <span class="font-mono font-semibold text-emerald-600">@hqh8897h</span> 報名</div>
+                    <div class="text-[10px] text-slate-400">或直接加入 Line 官方帳號 <span class="font-mono font-semibold text-green-600">@hqh8897h</span> 報名</div>
                 </div>
             </div>
         </div>
@@ -736,29 +736,29 @@
     <div id="successModal" class="hidden fixed inset-0 bg-black/70 backdrop-blur-md z-[110] flex items-center justify-center p-4">
         <div class="bg-white rounded-3xl max-w-md w-full p-8 shadow-2xl">
             <div class="text-center mb-6">
-                <div class="mx-auto w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mb-4">
-                    <i class="fa-solid fa-check-circle text-emerald-600 text-5xl success-check"></i>
+                <div class="mx-auto w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                    <i class="fa-solid fa-check-circle text-green-600 text-5xl success-check"></i>
                 </div>
                 <h3 class="text-2xl font-bold tracking-tight">報名成功！</h3>
                 <p class="text-slate-600 text-sm mt-2">您的報名資料已自動傳送給大樹教育，我們將盡速與您確認席次與繳費方式。</p>
             </div>
             
             <!-- LINE Action Area -->
-            <div class="bg-emerald-50 border border-emerald-200 rounded-2xl p-5 mb-6">
-                <div class="flex items-center gap-x-2 mb-3 text-emerald-700">
+            <div class="bg-green-50 border border-green-200 rounded-2xl p-5 mb-6">
+                <div class="flex items-center gap-x-2 mb-3 text-green-700">
                     <i class="fa-brands fa-line text-xl"></i>
                     <span class="font-bold">傳送報名資料至官方 Line</span>
                 </div>
                 
                 <button onclick="sendToLine()" 
-                        class="w-full h-12 bg-emerald-600 hover:bg-emerald-700 active:bg-emerald-800 text-white font-bold rounded-2xl flex items-center justify-center gap-x-2 text-sm transition-all">
+                        class="w-full h-12 bg-green-600 hover:bg-green-700 active:bg-green-800 text-white font-bold rounded-2xl flex items-center justify-center gap-x-2 text-sm transition-all">
                     <i class="fa-brands fa-line"></i>
                     <span>點擊加入 Line 並傳送報名資料</span>
                 </button>
                 
                 <div class="text-center mt-3">
                     <button onclick="copyLineMessage()" 
-                            class="text-xs text-emerald-700 hover:text-emerald-800 font-medium flex items-center justify-center gap-x-1 mx-auto">
+                            class="text-xs text-green-700 hover:text-green-800 font-medium flex items-center justify-center gap-x-1 mx-auto">
                         <i class="fa-solid fa-copy"></i>
                         <span>或複製訊息手動傳送</span>
                     </button>
@@ -766,7 +766,7 @@
             </div>
             
             <div class="text-xs text-center text-slate-500">
-                官方 Line：<span class="font-mono font-semibold text-emerald-600">@hqh8897h</span><br>
+                官方 Line：<span class="font-mono font-semibold text-green-600">@hqh8897h</span><br>
                 我們將在收到訊息後盡速回覆確認
             </div>
             
@@ -778,7 +778,7 @@
     <script>
         // Tailwind script
         function initializeTailwind() {
-            document.documentElement.style.setProperty('--accent', '#059669');
+            document.documentElement.style.setProperty('--accent', '#16a34a');
         }
         
         // Navbar scroll effect
@@ -811,7 +811,7 @@
                         <a href="#register" class="py-2">報名方式</a>
                         <div class="pt-4 border-t">
                             <button onclick="showRegisterModal(); document.querySelector('.fixed.inset-0.bg-black\\/60').remove();" 
-                                    class="w-full mt-2 bg-emerald-600 text-white py-3.5 rounded-3xl font-bold text-base">
+                                    class="w-full mt-2 bg-green-600 text-white py-3.5 rounded-3xl font-bold text-base">
                                 立即報名
                             </button>
                         </div>
@@ -847,12 +847,12 @@
             sessions.forEach((session, index) => {
                 const isSelected = preselectId === index;
                 const div = document.createElement('div');
-                div.className = `border rounded-2xl p-3 cursor-pointer transition-all text-sm ${isSelected ? 'border-emerald-500 bg-emerald-50 ring-1 ring-emerald-500' : 'border-slate-200 hover:border-emerald-300'}`;
+                div.className = `border rounded-2xl p-3 cursor-pointer transition-all text-sm ${isSelected ? 'border-green-500 bg-green-50 ring-1 ring-green-500' : 'border-slate-200 hover:border-green-300'}`;
                 div.innerHTML = `
-                    <div class="font-semibold text-emerald-700">${session.date}</div>
+                    <div class="font-semibold text-green-700">${session.date}</div>
                     <div class="text-[10px] text-slate-500 mt-0.5 line-clamp-2">${session.venue}</div>
                     <div class="flex items-center justify-between mt-2 text-xs">
-                        <span class="text-emerald-600 font-medium">${session.capacity}</span>
+                        <span class="text-green-600 font-medium">${session.capacity}</span>
                         <span class="text-slate-400">${session.time}</span>
                     </div>
                 `;
@@ -860,11 +860,11 @@
                 div.onclick = () => {
                     // Deselect all
                     container.querySelectorAll('div').forEach(el => {
-                        el.classList.remove('border-emerald-500', 'bg-emerald-50', 'ring-1', 'ring-emerald-500');
+                        el.classList.remove('border-green-500', 'bg-green-50', 'ring-1', 'ring-green-500');
                         el.classList.add('border-slate-200');
                     });
                     // Select this
-                    div.classList.add('border-emerald-500', 'bg-emerald-50', 'ring-1', 'ring-emerald-500');
+                    div.classList.add('border-green-500', 'bg-green-50', 'ring-1', 'ring-green-500');
                     div.classList.remove('border-slate-200');
                     selectedSessionId = index;
                 };
@@ -879,7 +879,7 @@
             // Auto select first if none preselected
             if (preselectId === null && container.children.length > 0) {
                 const first = container.children[0];
-                first.classList.add('border-emerald-500', 'bg-emerald-50', 'ring-1', 'ring-emerald-500');
+                first.classList.add('border-green-500', 'bg-green-50', 'ring-1', 'ring-green-500');
                 first.classList.remove('border-slate-200');
                 selectedSessionId = 0;
             }
@@ -1016,7 +1016,7 @@ Email：${r.email || '未填寫'}
                 // Show toast
                 const toast = document.createElement('div');
                 toast.className = 'fixed bottom-6 left-1/2 -translate-x-1/2 bg-slate-900 text-white text-xs px-5 py-3 rounded-3xl flex items-center gap-x-2 shadow-xl z-[200]';
-                toast.innerHTML = `<i class="fa-solid fa-check text-emerald-400"></i> <span>已複製報名訊息，請貼上到 Line</span>`;
+                toast.innerHTML = `<i class="fa-solid fa-check text-green-400"></i> <span>已複製報名訊息，請貼上到 Line</span>`;
                 document.body.appendChild(toast);
                 
                 setTimeout(() => {
@@ -1042,7 +1042,7 @@ Email：${r.email || '未填寫'}
                 const toast = document.createElement('div');
                 toast.className = 'fixed bottom-6 left-1/2 -translate-x-1/2 bg-slate-900 text-white text-xs px-5 py-3 rounded-3xl flex items-center gap-x-2 shadow-xl z-[200]';
                 toast.innerHTML = `
-                    <i class="fa-solid fa-check text-emerald-400"></i>
+                    <i class="fa-solid fa-check text-green-400"></i>
                     <span>已複製 Line ID：<span class="font-mono">@hqh8897h</span></span>
                 `;
                 document.body.appendChild(toast);
