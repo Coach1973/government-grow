@@ -1090,9 +1090,9 @@ Email：${r.email || '未填寫'}
                     if (target) {
                         e.preventDefault();
                         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                        
-                        // Close mobile menu if open
-                        const mobileMenus = document.querySelectorAll('.fixed.inset-0.bg-black\\/60');
+
+                        // Close mobile menu if open (排除 modal，否則點 menu 會把報名 modal 從 DOM 移除)
+                        const mobileMenus = document.querySelectorAll('.fixed.inset-0.bg-black\\/60:not(#registerModal):not(#successModal)');
                         mobileMenus.forEach(m => m.remove());
                     }
                 });
