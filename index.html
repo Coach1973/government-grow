@@ -1099,12 +1099,30 @@ Email：${r.email || '未填寫'}
             });
         }
         
+        // 強制把所有 inline onclick="showRegisterModal(...)" 改成 addEventListener
+        // 為什麼：某些瀏覽器在某些狀況下 inline onclick attribute 第一次點不會 fire（需 F5 才動）
+        // 用 addEventListener bind 一次就解決
+        function hardenRegisterButtons() {
+            document.querySelectorAll('button[onclick*="showRegisterModal"]').forEach(btn => {
+                const oc = btn.getAttribute('onclick') || '';
+                const match = oc.match(/showRegisterModal\(\s*(\d*)\s*\)/);
+                const arg = match && match[1] !== '' ? parseInt(match[1]) : null;
+                btn.removeAttribute('onclick');
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    showRegisterModal(arg);
+                });
+            });
+        }
+
         // Main initialization
         function initializePage() {
             initializeTailwind();
             initNavbar();
             initKeyboardControls();
             initSmoothScroll();
+            hardenRegisterButtons();
             
             // Optional: Preload first session selection hint (user can still change)
             console.log('%c[專業 landing page] 中小微企業多元發展說明會 網頁初始化完成', 'color:#64748b; font-size:9px');
